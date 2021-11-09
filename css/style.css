@@ -1,0 +1,20 @@
+body{
+  background-color:rgb(177, 228, 235);
+  font-family:'Times New Roman', Times, serif;
+
+}
+
+body header , footer > p {
+  text-align: center;
+}
+
+
+section {
+  margin: auto;
+  padding: 1%;
+  width: 50%;
+  font-size: 20px;
+  background-color: rgb(255, 248, 220, 0.25);
+  text-align: center;
+  
+}

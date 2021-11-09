@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Mi Web Personal</title>
+	<link href="css/style.css" rel="stylesheet" type="text/css" />
+  
+  <link rel="icon" href="icon/batman.png" type="image/png" sizes="28x28">
+  
+
+	<meta name="author" content="Gabriela">
+	<meta name="descripcion" content="Mi Web personal">
+	<meta name="keywords" content="mi web, personal" />
+
+
+</head>
+
+<body>
+  <header>
+	<h2>Bienvenido a mi web personal</h2>
+  </header>
+
+	<!-- Añadir nombre completo -->
+  <section>
+	<h4>Gabriela Ramos Baque</h4>
+
+	<!-- Añadir una foto personal -->
+  <img src="Extras/gab.JPG" width="500"/>
+
+	<!-- Añadir Edad, Carrera, Hobbies -->
+    <p><strong>Edad:</strong> 22 años</p>
+    <p><strong>Carrera:</strong> Ingeniería en Computación</p>
+    <p><strong>Hobbies:</strong> Escuchar música y ver series</p>
+
+  </section>
+
+	<!-- Mostrar el avance de la carrera con una barra de progreso -->
+    <section>
+      <span><strong>Progreso carrera:</strong></span>
+      <span>
+	  <progress id="file" max="100" value="50"> Progreso 50% </progress>
+      </span>
+    </section>
+
+    <section>
+	<!-- Añadir nombre de cancion favorita -->
+	  <p><strong>Canción favorita: I'm On Fire - Bruce Springsteen</strong></p>
+
+    <!-- Añadir su cancion favorita (Reproductor de audio) -->
+
+    <audio src="../Extras/ImOnFire.mp3" controls="controls" type="audio/mpeg" preload="preload">
+    </audio> 
+    </section>
+
+    <section>
+    <!-- Añadir el nombre de su pelicula favorita -->
+    <p><strong>Película favorita: LEGO BATMAN</strong></p>
+
+    <!-- Añadir desde youtube el trailer de su pelicula favorita [1] -->
+    
+      <iframe width="420" height="345" src="https://www.youtube.com/embed/LWfKJYyoDNg">
+      </iframe>
+      <br>
+
+    <!-- Incluir un enlace que redirija a la calificacion de la pelicula en Rotten Tomatoes -->
+    <a href="https://www.rottentomatoes.com/m/the_lego_batman_movie">Reseña en Rotten Tomatoes</a>    
+    </section>
+    <!-- Incluya una lista de metas a futuro -->
+    <section>
+    <h4>Metas a futuro</h4>
+      <lu>
+        <li>Ser desarrolladora web</li>
+        <li>Viajar alrededor del mundo</li>
+        <li>Vivir en otro país</li>
+      </lu>
+    </section>
+
+    <!-- Incluir lugar favorito del mundo como un mapa embebido [2] -->
+    <section>
+        <h4>Lugar favorito:</h4>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3315.008575356103!2d-117.92116288494888!3d33.81209178067201!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dcd7d12b3b5e6b%3A0x2ef62f8418225cfa!2sDisneyland!5e0!3m2!1ses!2sec!4v1634769827000!5m2!1ses!2sec" width="600" height="350" style="border:0;"> </iframe>
+    </section>
+
+    <!-- Realizar un formulario de contacto -->
+
+  
+
+    <!-- Debe contener Nombres, Apellidos, Correo, Fecha de nacimiento, Mensaje, Boton de enviar-->
+    <!-- Las etiquetas usada para cada entrada debe ser acorde al tipo de información que se ingresa -->
+    <!-- Todos los elementos del formulario deben ser obligatorios -->
+
+    <!-- Añadir pie de pagina, Año - copyright y nombre de autor -->
+
+    <section>
+    <h3>Contáctame</h3>
+    <form action="">
+      <label >Nombre:</label> <input id="name" type="text" name="name" autocomplete="on" required="required" placeholder="Ingrese nombre">
+      <br>
+
+      <label >Apellidos:</label> <input id="last-name" type="text" name="last-name" autocomplete="on" required="required" placeholder="Ingrese apellidos">
+      <br/>
+
+      <label >Correo:</label> <input id="mail" type="mail" name="name" autocomplete="on" required="required" placeholder="Ingrese correo"><br>
+
+      <label>Fecha de nacimiento: <input id="fecha" type="date" name="fecha" required="required"><br>
+
+
+      <label> Mensaje:</label><textarea cols="20" rows="10"></textarea>
+      <br>
+      <br>
+      <button>Enviar</button>
+      </form>
+    </section>
+
+    <footer>
+        <p>Copyright © 2021 - Gabriela Ramos</p>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>
